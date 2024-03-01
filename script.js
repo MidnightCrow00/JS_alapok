@@ -3,8 +3,8 @@ window.addEventListener("load", function () {
   elemekElerese2();
   elemekElerese3();
   elemekElerese4();
-  elemekFormazasa();
-  esemenyKezeles1();
+  //elemekFormazasa();
+  //esemenyKezeles1();
   esemenyKezeles2();
   esemenyKezeles3();
   esemenyKezeles4();
@@ -44,10 +44,12 @@ function elemekFormazasa (){
 }
 function esemenyKezeles1(){
   const ESEMENY = document.querySelector("#lista")[0];
-  ELEM.addEventListener("esemeny", fvenynev)
+  ESEMENY.addEventListener("esemeny", fvenynev)
 }
 function esemenyKezeles2(){
-
+  const ESEMENY2 = document.querySelectorAll(".feladat")[0];
+  ESEMENY2.innerHTML = "<button>OK</button>";
+  ESEMENY2.addEventListener("esemeny", fvenynev)
 }
 function esemenyKezeles3(){
 
