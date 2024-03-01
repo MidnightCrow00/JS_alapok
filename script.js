@@ -3,6 +3,11 @@ window.addEventListener("load", function () {
   elemekElerese2();
   elemekElerese3();
   elemekElerese4();
+  elemekFormazasa();
+  esemenyKezeles1();
+  esemenyKezeles2();
+  esemenyKezeles3();
+  esemenyKezeles4();
 });
 
 function elemekElerese1() {
@@ -23,13 +28,30 @@ function elemekElerese3() {
 }
 function elemekElerese4() {
   /**Ide jön az 4. feladat */
-  const LISTA = document.getElementsByClassName("megjelenito")[0];
-    console.log(LISTA)
-  let txt = "<div >"
+  const LISTA = document.getElementById("lista");
+  console.log(LISTA);
+  let txt = "<ul>";
   for (let index = 0; index < 5; index++) {
-    txt += `<p> ${[Math.floor(Math.random()*21+10)]} </p>`;
+    txt += `<li> ${[Math.floor(Math.random() * 21 + 10)]} </li>`;
   }
-  txt += "</div>"
-  LISTA.innerHTML= txt
+  txt += "</ul>";
+  LISTA.innerHTML = txt;
   console.log(txt);
+}
+function elemekFormazasa (){
+  const FORMAZAS = document.querySelector("#lista")[0];
+  FORMAZAS.classList.add(".formazott")
+}
+function esemenyKezeles1(){
+  const ESEMENY = document.querySelector("#lista")[0];
+  ELEM.addEventListener("esemeny", fvenynev)
+}
+function esemenyKezeles2(){
+
+}
+function esemenyKezeles3(){
+
+}
+function esemenyKezeles4(){
+
 }
